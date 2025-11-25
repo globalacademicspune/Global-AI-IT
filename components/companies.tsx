@@ -34,7 +34,7 @@ export default function Companies() {
     },
     {
       name: 'Accenture',
-      logo: '/accenture-logo.png',
+      logo: '/Accenture-Logo.png',
     },
     {
       name: 'Cisco',
