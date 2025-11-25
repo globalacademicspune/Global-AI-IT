@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import Image from "next/image"  // <-- Added
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,11 +22,19 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          
+          {/* LOGO (updated!) */}
           <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center shadow-md">
-              <span className="text-primary-foreground font-bold text-lg">G</span>
-            </div>
-            <span className="font-bold text-lg hidden sm:block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Global AIIT</span>
+            <Image
+              src="/GlobalAIIT-logo.png"
+              alt="Global AIIT Logo"
+              width={40}
+              height={40}
+              className="object-contain rounded-md"
+            />
+            <span className="font-bold text-lg hidden sm:block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Global AIIT
+            </span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

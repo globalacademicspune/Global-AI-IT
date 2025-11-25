@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { MessageCircle, Phone, Sparkles, Users, Target } from 'lucide-react'
+import { MessageCircle, Phone, Sparkles } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
           <div className="inline-block bg-gradient-to-r from-amber-100 to-orange-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200 animate-pulse">
             <span className="flex items-center gap-2">
               <Sparkles size={16} />
-              New Batch Starts on 22nd November 2025 @ 6PM IST
+              New Batch Starts on 1st December 2025 @ 4PM IST
             </span>
           </div>
 
@@ -56,17 +56,34 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* ✅ UPDATED FLOATING BUTTONS */}
           <div className="fixed bottom-6 right-6 flex flex-col gap-3">
-            <button className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-all duration-300" title="Chat with us">
+
+            {/* WhatsApp Button */}
+            <a
+              href="https://wa.me/919763616999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-all duration-300"
+              title="Chat on WhatsApp"
+            >
               <MessageCircle size={24} />
-            </button>
-            <button className="bg-gradient-to-r from-blue-600 to-primary hover:shadow-2xl text-white rounded-full p-4 hover:scale-110 transition-all duration-300 flex items-center gap-2" title="Request callback">
+            </a>
+
+            {/* Call Button */}
+            <a
+              href="tel:+919763616999"
+              className="bg-gradient-to-r from-blue-600 to-primary hover:shadow-2xl text-white rounded-full p-4 hover:scale-110 transition-all duration-300 flex items-center gap-2"
+              title="Call Now"
+            >
               <Phone size={24} />
               <span className="text-xs font-semibold hidden sm:inline">Call</span>
-            </button>
+            </a>
+
           </div>
         </div>
       </div>
     </section>
   )
 }
+

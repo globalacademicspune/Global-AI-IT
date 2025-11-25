@@ -11,7 +11,7 @@ export default function Programs() {
       description: 'For professionals transitioning to data engineering with hands-on projects',
       duration: '14 weeks',
       level: 'Beginner to Intermediate',
-      price: '₹29,999',
+       
       badge: 'Most Popular',
       features: ['Live Classes', 'Project-Based Learning', 'Lifetime Access', 'Certificate'],
     },
@@ -20,7 +20,7 @@ export default function Programs() {
       description: 'Comprehensive program covering all big data technologies and frameworks',
       duration: '24 weeks',
       level: 'Intermediate to Advanced',
-      price: '₹49,999',
+      
       badge: 'Best Value',
       features: ['1-on-1 Mentoring', 'Job Placement Support', 'Industry Projects', 'Certificate'],
       featured: true,
@@ -30,7 +30,7 @@ export default function Programs() {
       description: 'Advanced techniques and optimization strategies for experienced engineers',
       duration: '20 weeks',
       level: 'Advanced',
-      price: '₹39,999',
+      
       badge: 'Expert Level',
       features: ['Custom Projects', 'Career Coaching', 'Networking', 'Certificate'],
     },

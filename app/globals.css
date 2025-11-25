@@ -116,3 +116,6 @@
     @apply bg-background text-foreground;
   }
 }
+.mentor-card {
+  --card-foreground: #ffffff !important;
+}

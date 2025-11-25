@@ -10,22 +10,17 @@ export const metadata: Metadata = {
   title: 'Global AIIT - Big Data & Data Engineering Courses',
   description: 'Master Cloud Big Data Technologies with industry experts. 30K+ learners from 23+ countries. 100+ LPA highest CTC recorded.',
   generator: 'v0.app',
+
+  // ⭐ UPDATED FAVICON CONFIG
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+        url: '/GlobalAIIT-logo.png',   // <--- Your logo
+        sizes: '32x32',
+        type: 'image/jpeg',
+      }
     ],
-    apple: '/apple-icon.png',
+    apple: '/GlobalAIIT-logo.png',     // <--- Apple touch icon
   },
 }
 
