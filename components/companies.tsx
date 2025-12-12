@@ -17,6 +17,30 @@ export default function Companies() {
       logo: '/MasterCard_Logo.png',
     },
     {
+      name: 'Jio',
+      logo: '/jio-logo.png',
+    },
+    {
+      name: 'CNTXT',
+      logo: '/cntxt-logo.avif',
+    },
+    {
+      name: 'NBD',
+      logo: '/nbd-logo.png',
+    },
+    {
+      name: 'Oracle',
+      logo: '/oracle-logo.png',
+    },
+    {
+      name: 'Deloitte',
+      logo: '/deloitte-logo.png',
+    },
+    {
+      name: 'Capegemini',
+      logo: '/capegemini-logo.svg',
+    },
+    {
       name: 'VISA',
       logo: '/VISA-logo.png',
     },

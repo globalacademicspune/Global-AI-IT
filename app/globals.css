@@ -113,9 +113,32 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background: transparent !important;
+    @apply text-foreground;
   }
 }
 .mentor-card {
   --card-foreground: #ffffff !important;
 }
+/* ============================
+   TECHNOLOGIES MARQUEE ANIMATION
+   ============================ */
+@keyframes technologies-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-technologies-marquee {
+  animation: technologies-marquee 40s linear infinite;
+  width: max-content;
+  display: flex;
+  white-space: nowrap;
+}
+
+/* ⭐ STOP LOOP ON HOVER */
+.animate-technologies-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+
