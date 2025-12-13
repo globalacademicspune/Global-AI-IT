@@ -67,9 +67,9 @@ export default function Hero() {
 
             <Button
               size="lg"
-              variant="outline"
-              className="border-2 border-cyan-300 text-cyan-200 
-              hover:bg-cyan-300/20 font-semibold transition-all duration-300"
+              className="bg-gradient-to-r from-blue-500 to-cyan-400 
+              text-white font-semibold hover:scale-110 hover:shadow-2xl
+              transition-all duration-300"
             >
               View Programs
             </Button>
