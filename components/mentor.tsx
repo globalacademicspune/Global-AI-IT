@@ -19,8 +19,8 @@ export default function Mentor() {
             </div>
 
             <ul className="space-y-3 text-lg">
-              <li>✓ Alumni - IIT Delhi & Stanford University</li>
-              <li>✓ Ex-Senior Engineer at Google & Meta</li>
+              <li>✓ Ex-Senior Engineer at Jio</li>
+              <li>✓ Ex-Senior Engineer at Barclays</li>
               <li>✓ Founder & CEO of Global AIIT</li>
               <li>✓ Trained 50K+ working professionals & students in Big Data & Cloud Computing</li>
             </ul>

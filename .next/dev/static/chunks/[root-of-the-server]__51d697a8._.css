@@ -193,7 +193,6 @@
     --color-green-600: #00a544;
     --color-cyan-50: #ecfeff;
     --color-cyan-100: #cefafe;
-    --color-cyan-200: #a2f4fd;
     --color-cyan-300: #53eafd;
     --color-cyan-400: #00d2ef;
     --color-cyan-500: #00b7d7;
@@ -281,7 +280,6 @@
       --color-green-600: lab(59.0978% -58.6621 41.2579);
       --color-cyan-50: lab(98.3303% -5.97429 -2.62109);
       --color-cyan-100: lab(95.3146% -13.8285 -6.84733);
-      --color-cyan-200: lab(91.0821% -24.0435 -12.8306);
       --color-cyan-300: lab(85.3886% -36.7635 -21.5717);
       --color-cyan-400: lab(76.6045% -40.9406 -29.6231);
       --color-cyan-500: lab(67.805% -35.3952 -30.2018);
@@ -1953,10 +1951,6 @@
     }
   }
 
-  .border-cyan-300 {
-    border-color: var(--color-cyan-300);
-  }
-
   .border-destructive {
     border-color: var(--destructive);
   }
@@ -1989,10 +1983,6 @@
 
   .border-transparent {
     border-color: #0000;
-  }
-
-  .border-white {
-    border-color: var(--color-white);
   }
 
   .border-white\/20 {
@@ -2855,10 +2845,6 @@
     .text-cyan-100\/80 {
       color: color-mix(in oklab, var(--color-cyan-100) 80%, transparent);
     }
-  }
-
-  .text-cyan-200 {
-    color: var(--color-cyan-200);
   }
 
   .text-cyan-300 {
@@ -3786,18 +3772,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-cyan-300\/20:hover {
-      background-color: #53eafd33;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-cyan-300\/20:hover {
-        background-color: color-mix(in oklab, var(--color-cyan-300) 20%, transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-destructive\/90:hover {
       background-color: var(--destructive);
     }
@@ -3878,18 +3852,6 @@
   @media (hover: hover) {
     .hover\:bg-sidebar-accent:hover {
       background-color: var(--sidebar-accent);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-white\/10:hover {
-      background-color: #ffffff1a;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-white\/10:hover {
-        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-      }
     }
   }
 

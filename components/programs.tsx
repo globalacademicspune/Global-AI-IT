@@ -2,16 +2,17 @@
 
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { CheckCircle2, Clock, Zap, X, BookOpen } from 'lucide-react'
+import { CheckCircle2, Clock, Zap, X, BookOpen } from "lucide-react"
 import { useState } from "react"
 
 export default function Programs() {
-  const [selectedProgram, setSelectedProgram] = useState(null)
+  const [selectedProgram, setSelectedProgram] = useState<any>(null)
 
   const programs = [
     {
       title: "DevOps Mastery Program",
-      description: "Learn CI/CD pipelines, containerization, and infrastructure automation for modern deployment",
+      description:
+        "Learn CI/CD pipelines, containerization, and infrastructure automation for modern deployment",
       duration: "16 weeks",
       level: "Beginner to Intermediate",
       price: "",
@@ -35,7 +36,8 @@ export default function Programs() {
     },
     {
       title: "Kubernetes & Cloud Native",
-      description: "Master container orchestration, microservices, and cloud-native application development",
+      description:
+        "Master container orchestration, microservices, and cloud-native application development",
       duration: "18 weeks",
       level: "Intermediate",
       price: "",
@@ -61,7 +63,8 @@ export default function Programs() {
     },
     {
       title: "AI & Machine Learning Bootcamp",
-      description: "Comprehensive program in AI, deep learning, and machine learning model deployment",
+      description:
+        "Comprehensive program in AI, deep learning, and machine learning model deployment",
       duration: "20 weeks",
       level: "Intermediate to Advanced",
       price: "",
@@ -87,7 +90,8 @@ export default function Programs() {
     },
     {
       title: "Elite Data Engineering Program",
-      description: "For professionals transitioning to data engineering with hands-on projects",
+      description:
+        "For professionals transitioning to data engineering with hands-on projects",
       duration: "14 weeks",
       level: "Beginner to Intermediate",
       price: "",
@@ -112,7 +116,8 @@ export default function Programs() {
     },
     {
       title: "Ultimate Big Data Masters",
-      description: "Comprehensive program covering all big data technologies and frameworks",
+      description:
+        "Comprehensive program covering all big data technologies and frameworks",
       duration: "24 weeks",
       level: "Intermediate to Advanced",
       price: "",
@@ -140,7 +145,8 @@ export default function Programs() {
     },
     {
       title: "Advanced Data Engineering Program",
-      description: "Advanced techniques and optimization strategies for experienced engineers",
+      description:
+        "Advanced techniques and optimization strategies for experienced engineers",
       duration: "20 weeks",
       level: "Advanced",
       price: "",
@@ -169,18 +175,26 @@ export default function Programs() {
 
   return (
     <>
-      <section id="programs" className="py-20 bg-gradient-to-b from-white to-blue-50">
+      {/* IMPORTANT: Anchor target for Hero button */}
+      <section
+        id="programs-section"
+        className="py-20 bg-gradient-to-b from-white to-blue-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">Professional Programs</h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              Professional Programs
+            </h2>
             <p className="text-xl text-foreground/60 max-w-2xl mx-auto">
               Choose the program that fits your career goals and experience level
             </p>
           </div>
 
-          {/* DevOps, Kubernetes & AI/ML Section */}
+          {/* Emerging Technologies */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold mb-8 text-foreground">Emerging Technologies</h3>
+            <h3 className="text-3xl font-bold mb-8 text-foreground">
+              Emerging Technologies
+            </h3>
             <div className="grid md:grid-cols-3 gap-8">
               {programs
                 .filter((p) => p.category !== "Big Data")
@@ -191,6 +205,7 @@ export default function Programs() {
                         {program.badge}
                       </div>
                     )}
+
                     <Card
                       className={`h-full border-2 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
                         program.featured
@@ -203,49 +218,58 @@ export default function Programs() {
                           <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold mb-3">
                             {program.level}
                           </div>
-                          <h3 className="text-2xl font-bold mb-3">{program.title}</h3>
-                          <p className="text-foreground/70">{program.description}</p>
+                          <h3 className="text-2xl font-bold mb-3">
+                            {program.title}
+                          </h3>
+                          <p className="text-foreground/70">
+                            {program.description}
+                          </p>
                         </div>
 
                         <div className="space-y-3 border-y border-border/30 py-4">
                           <div className="flex items-center gap-2">
                             <Clock size={18} className="text-primary" />
                             <span className="text-sm">
-                              <span className="font-semibold">Duration:</span> {program.duration}
+                              <span className="font-semibold">Duration:</span>{" "}
+                              {program.duration}
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
                             <Zap size={18} className="text-accent" />
                             <span className="text-sm">
-                              <span className="font-semibold">Level:</span> {program.level}
+                              <span className="font-semibold">Level:</span>{" "}
+                              {program.level}
                             </span>
                           </div>
                         </div>
 
                         <div className="space-y-2">
-                          {program.features.map((feature) => (
-                            <div key={feature} className="flex items-center gap-2">
-                              <CheckCircle2 size={16} className="text-primary flex-shrink-0" />
+                          {program.features.map((feature: string) => (
+                            <div
+                              key={feature}
+                              className="flex items-center gap-2"
+                            >
+                              <CheckCircle2
+                                size={16}
+                                className="text-primary flex-shrink-0"
+                              />
                               <span className="text-sm">{feature}</span>
                             </div>
                           ))}
                         </div>
 
-                        <div className="flex-grow"></div>
+                        <div className="flex-grow" />
 
-                        <div className="space-y-3">
-                          <div className="text-3xl font-bold text-primary">{program.price}</div>
-                          <Button
-                            onClick={() => setSelectedProgram(program)}
-                            className={`w-full font-semibold transition-all duration-300 ${
-                              program.featured
-                                ? "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg"
-                                : "bg-primary hover:bg-primary/90 text-primary-foreground"
-                            }`}
-                          >
-                            Learn More
-                          </Button>
-                        </div>
+                        <Button
+                          onClick={() => setSelectedProgram(program)}
+                          className={`w-full font-semibold transition-all duration-300 ${
+                            program.featured
+                              ? "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg"
+                              : "bg-primary hover:bg-primary/90 text-primary-foreground"
+                          }`}
+                        >
+                          Learn More
+                        </Button>
                       </div>
                     </Card>
                   </div>
@@ -253,9 +277,11 @@ export default function Programs() {
             </div>
           </div>
 
-          {/* Big Data Courses Section */}
+          {/* Big Data */}
           <div>
-            <h3 className="text-3xl font-bold mb-8 text-foreground">Big Data & Engineering</h3>
+            <h3 className="text-3xl font-bold mb-8 text-foreground">
+              Big Data & Engineering
+            </h3>
             <div className="grid md:grid-cols-3 gap-8">
               {programs
                 .filter((p) => p.category === "Big Data")
@@ -266,6 +292,7 @@ export default function Programs() {
                         {program.badge}
                       </div>
                     )}
+
                     <Card
                       className={`h-full border-2 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
                         program.featured
@@ -278,49 +305,58 @@ export default function Programs() {
                           <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold mb-3">
                             {program.level}
                           </div>
-                          <h3 className="text-2xl font-bold mb-3">{program.title}</h3>
-                          <p className="text-foreground/70">{program.description}</p>
+                          <h3 className="text-2xl font-bold mb-3">
+                            {program.title}
+                          </h3>
+                          <p className="text-foreground/70">
+                            {program.description}
+                          </p>
                         </div>
 
                         <div className="space-y-3 border-y border-border/30 py-4">
                           <div className="flex items-center gap-2">
                             <Clock size={18} className="text-primary" />
                             <span className="text-sm">
-                              <span className="font-semibold">Duration:</span> {program.duration}
+                              <span className="font-semibold">Duration:</span>{" "}
+                              {program.duration}
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
                             <Zap size={18} className="text-accent" />
                             <span className="text-sm">
-                              <span className="font-semibold">Level:</span> {program.level}
+                              <span className="font-semibold">Level:</span>{" "}
+                              {program.level}
                             </span>
                           </div>
                         </div>
 
                         <div className="space-y-2">
-                          {program.features.map((feature) => (
-                            <div key={feature} className="flex items-center gap-2">
-                              <CheckCircle2 size={16} className="text-primary flex-shrink-0" />
+                          {program.features.map((feature: string) => (
+                            <div
+                              key={feature}
+                              className="flex items-center gap-2"
+                            >
+                              <CheckCircle2
+                                size={16}
+                                className="text-primary flex-shrink-0"
+                              />
                               <span className="text-sm">{feature}</span>
                             </div>
                           ))}
                         </div>
 
-                        <div className="flex-grow"></div>
+                        <div className="flex-grow" />
 
-                        <div className="space-y-3">
-                          <div className="text-3xl font-bold text-primary">{program.price}</div>
-                          <Button
-                            onClick={() => setSelectedProgram(program)}
-                            className={`w-full font-semibold transition-all duration-300 ${
-                              program.featured
-                                ? "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg"
-                                : "bg-primary hover:bg-primary/90 text-primary-foreground"
-                            }`}
-                          >
-                            Learn More
-                          </Button>
-                        </div>
+                        <Button
+                          onClick={() => setSelectedProgram(program)}
+                          className={`w-full font-semibold transition-all duration-300 ${
+                            program.featured
+                              ? "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg"
+                              : "bg-primary hover:bg-primary/90 text-primary-foreground"
+                          }`}
+                        >
+                          Learn More
+                        </Button>
                       </div>
                     </Card>
                   </div>
@@ -330,19 +366,23 @@ export default function Programs() {
         </div>
       </section>
 
-      {/* Modal for course topics */}
+      {/* Modal */}
       {selectedProgram && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <Card className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white">
             <div className="p-8">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <h2 className="text-4xl font-bold mb-2">{selectedProgram.title}</h2>
-                  <p className="text-foreground/60">{selectedProgram.description}</p>
+                  <h2 className="text-4xl font-bold mb-2">
+                    {selectedProgram.title}
+                  </h2>
+                  <p className="text-foreground/60">
+                    {selectedProgram.description}
+                  </p>
                 </div>
                 <button
                   onClick={() => setSelectedProgram(null)}
-                  className="text-foreground/60 hover:text-foreground transition-colors"
+                  className="text-foreground/60 hover:text-foreground"
                 >
                   <X size={24} />
                 </button>
@@ -359,7 +399,9 @@ export default function Programs() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground/60">Price</p>
-                  <p className="font-semibold text-primary">{selectedProgram.price}</p>
+                  <p className="font-semibold text-primary">
+                    {selectedProgram.price}
+                  </p>
                 </div>
               </div>
 
@@ -369,13 +411,18 @@ export default function Programs() {
                   <h3 className="text-2xl font-bold">Topics Covered</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {selectedProgram.topics.map((topic, index) => (
+                  {selectedProgram.topics.map((topic: string, i: number) => (
                     <div
-                      key={index}
+                      key={i}
                       className="flex items-start gap-3 p-3 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg border border-border/30"
                     >
-                      <CheckCircle2 size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                      <span className="font-medium text-foreground">{topic}</span>
+                      <CheckCircle2
+                        size={20}
+                        className="text-primary mt-0.5 flex-shrink-0"
+                      />
+                      <span className="font-medium text-foreground">
+                        {topic}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -386,8 +433,8 @@ export default function Programs() {
                   Enroll Now
                 </Button>
                 <Button
-                  onClick={() => setSelectedProgram(null)}
                   variant="outline"
+                  onClick={() => setSelectedProgram(null)}
                   className="flex-1 font-semibold"
                 >
                   Close

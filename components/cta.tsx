@@ -5,10 +5,17 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export default function CTA() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground relative overflow-hidden"
+    >
+      {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-10 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse" />
+        <div
+          className="absolute bottom-0 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: '1s' }}
+        />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
@@ -17,16 +24,33 @@ export default function CTA() {
             Ready to Transform Your Career?
           </h2>
           <p className="text-lg md:text-xl opacity-95 font-light">
-            Join 30,000+ professionals who have upskilled with Global AIIT and landed their dream jobs
+            Join 30,000+ professionals who have upskilled with Global AIIT and
+            landed their dream jobs
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-          <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-            Schedule Free Consultation
-            <ArrowRight size={20} />
+          {/* Schedule Free Consultation */}
+          <Button
+            size="lg"
+            className="bg-white hover:bg-white/90 text-primary font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+            asChild
+          >
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeohsU5hEqL6GVc9QY_fURoOibDZqZZw9FVB_ZQMWKaxLxTNA/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule Free Consultation
+              <ArrowRight size={20} />
+            </a>
           </Button>
-          <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 font-bold transition-all duration-300">
+
+          {/* Download Syllabus */}
+          <Button
+            size="lg"
+            className="bg-white hover:bg-white/90 text-primary font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+          >
             Download Syllabus
           </Button>
         </div>
@@ -35,9 +59,12 @@ export default function CTA() {
           {[
             'Job Placement Support',
             'Lifetime Course Access',
-            '1-on-1 Mentoring'
+            '1-on-1 Mentoring',
           ].map((benefit) => (
-            <div key={benefit} className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur px-4 py-3 rounded-lg">
+            <div
+              key={benefit}
+              className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur px-4 py-3 rounded-lg"
+            >
               <CheckCircle2 size={20} />
               <span className="font-semibold">{benefit}</span>
             </div>
