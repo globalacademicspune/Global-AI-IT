@@ -88,32 +88,41 @@ export default function Programs() {
         "GenAI & LLMs (ChatGPT, Hugging Face)",
       ],
     },
+
+    // ✅ CLOUD SOLUTIONS ARCHITECT (REPLACED ELITE DATA ENGINEERING)
     {
-      title: "Elite Data Engineering Program",
+      title: "Cloud Solutions Architect Program",
       description:
-        "For professionals transitioning to data engineering with hands-on projects",
-      duration: "14 weeks",
-      level: "Beginner to Intermediate",
+        "Design, deploy, and manage secure, scalable, and highly available cloud architectures across AWS, Microsoft Azure, and Google Cloud Platform (GCP).",
+      duration: "16 weeks",
+      level: "Intermediate to Advanced",
       price: "",
-      badge: "Most Popular",
-      features: ["Live Classes", "Project-Based Learning", "Lifetime Access", "Certificate"],
+      badge: "Architect Track",
+      features: [
+        "Live Classes",
+        "Architecture Design Labs",
+        "Multi-Cloud Case Studies (AWS, Azure, GCP)",
+        "Certification Prep (AWS, Azure & GCP)",
+      ],
       category: "Big Data",
       topics: [
-        "SQL & Database Fundamentals",
-        "Data Warehousing Concepts",
-        "ETL Process Design",
-        "Apache Kafka Basics",
-        "Apache Spark Fundamentals",
-        "PySpark for Data Processing",
-        "Data Pipelines & Orchestration",
-        "Apache Airflow Basics",
-        "Dimensional Modeling",
-        "Star Schema & Snowflake Schema",
-        "Cloud Data Warehouses (Snowflake, BigQuery)",
-        "Python for Data Engineering",
-        "Real-time Data Processing",
+        "Cloud Architecture Fundamentals & Well-Architected Frameworks (AWS, Azure, GCP)",
+        "Cloud Networking (AWS VPC, Azure VNet, GCP VPC)",
+        "Identity & Access Management (AWS IAM, Azure AD, GCP IAM)",
+        "Cloud Security & Compliance (Shared Responsibility Model)",
+        "Compute Services (EC2, Azure VM Scale Sets, Google Compute Engine)",
+        "Storage Services (S3, Azure Blob Storage, Google Cloud Storage)",
+        "Database Services (RDS, DynamoDB, Azure SQL, Cosmos DB, Cloud SQL, Firestore)",
+        "Serverless Architecture (AWS Lambda, Azure Functions, Google Cloud Functions)",
+        "Containers & Orchestration (Docker, Kubernetes, EKS, AKS, GKE)",
+        "High Availability & Disaster Recovery (Multi-Region Design)",
+        "Infrastructure as Code (Terraform, CloudFormation, ARM Templates)",
+        "Monitoring, Logging & Auditing (CloudWatch, Azure Monitor, Cloud Logging)",
+        "Cost Optimization & Governance",
+        "Hybrid & Multi-Cloud Architecture Strategy",
       ],
     },
+
     {
       title: "Ultimate Big Data Masters",
       description:
@@ -173,7 +182,7 @@ export default function Programs() {
     },
   ]
 
-  return (
+ return (
     <>
       {/* IMPORTANT: Anchor target for Hero button */}
       <section

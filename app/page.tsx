@@ -1,5 +1,6 @@
 import Navigation from '@/components/navigation'
 import Hero from '@/components/hero'
+import BannerSection from '@/components/BannerSection'
 import Statistics from '@/components/statistics'
 import Programs from '@/components/programs'
 import Technologies from '@/components/technologies'
@@ -16,6 +17,7 @@ export default function Home() {
     <main className="min-h-screen bg-transparent" style={{ background: "transparent" }}>
       <Navigation />
       <Hero />
+      <BannerSection />
       <Statistics />
       <Programs />
       <Technologies />

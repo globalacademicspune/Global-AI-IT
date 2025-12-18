@@ -62,9 +62,20 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:scale-105 text-primary-foreground transition-all duration-300 flex items-center gap-2">
+            <Button
+            asChild 
+            className="bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:scale-105 text-primary-foreground transition-all duration-300 flex items-center gap-2"
+          >
+            
+            
+              <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeohsU5hEqL6GVc9QY_fURoOibDZqZZw9FVB_ZQMWKaxLxTNA/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Enroll Now
               <ArrowRight size={16} />
+              </a>
             </Button>
           </div>
 
