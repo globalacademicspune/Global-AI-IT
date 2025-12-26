@@ -1,1 +1,12 @@
 node_modules
+.next
+.out/
+
+next-development.log
+next-build.log
+client-reference-manifest.js
+react-client-manifest.json
+server-reference-manifest.json
+
+.DS_Store
+Thumbs_db
