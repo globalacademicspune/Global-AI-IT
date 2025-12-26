@@ -8,43 +8,74 @@ const mentorData = [
   {
     key: 'zuber',
     name: 'Zuber Shaikh',
-    followers: '500k+ Followers on LinkedIn, YouTube & Twitter',
+    followers: 'Founder & CEO | AI & Cloud Evangelist',
     experience: [
-      'Ex-Senior Engineer at Jio',
-      'Ex-Senior Engineer at Barclays',
-      'Founder & CEO of Global AIIT',
-      'Trained 50K+ working professionals & students in Big Data & Cloud Computing',
+      'CEO of Global AIIT | 11+ Years IT Leadership',
+      'Azure Solutions Architect Expert, GCP Professional & AWS Certified',
+      'Trained 50,000+ professionals in AI & Big Data',
+      'Certified Ethical Hacker (CEH) & Cybersecurity Specialist',
+      'Pioneer in AI-powered Smart Classroom ecosystems',
     ],
     quote:
-      "I have trained people who are now leading big teams at top product-based companies. It's not just a course to help you crack interviews; Interview cracking is just one part. The bigger part is to help you prepare so well that you can work on the hardest of projects with ease. Join us to master the technologies that power tomorrow's data infrastructure.",
+      "My mission is to create India's smartest, AI-first education platform. We bridge the gap between technical complexity and real-world business impact.",
     imageUrl: '/zuber.jpeg',
     featured: true,
   },
   {
     key: 'anis-sayed',
     name: 'Anis Sayed',
-    followers: '150k+ Followers on LinkedIn',
+    followers: 'Big Data DevOps Expert | Dubai, UAE',
     experience: [
-      'Senior DevOps/Big Data Administrator at Emirates NBD, Dubai',
-      'AWS Certified Professional',
-      '8+ Years in Cloud & DevOps',
+      'Senior DevOps Engineer at Emirates NBD, Dubai',
+      'Specialist in Enterprise-Scale Cloud Infrastructure',
+      'Expert in Security, Compliance & Platform Stability',
+      'AWS Certified Professional & Big Data Administrator',
     ],
     quote:
-      'Expert in managing enterprise-scale cloud infrastructure, emphasizing security, compliance, monitoring, and operational stability.',
+      "I focus on production-grade stability. My goal is to teach you how to manage and optimize mission-critical data platforms at a global scale.",
     imageUrl: '/anis.jpeg',
   },
   {
     key: 'sufiyan-sayyed',
     name: 'Sufiyan Sayyed',
-    followers: '100k+ Followers on Twitter',
+    followers: 'Cloud & DevOps Architect | Riyadh, KSA',
     experience: [
-      'Senior Cloud and DevOps Engineer at CNTXT, Saudi Arabia',
+      'Cloud Architect at CNTXT - Google Cloud Partner',
       '4X GCP Certified | AWS Certified Professional',
-      '8+ Years in Cloud and DevOps',
+      'Specialist in Infrastructure as Code (Terraform) & Kubernetes',
+      'Leading Digital Transformation for Enterprise Clients',
     ],
     quote:
-      'Guiding teams in designing, deploying, and operating scalable cloud and DevOps solutions, with a strong focus on CI/CD pipelines, infrastructure as code, and production-grade systems.',
+      "I drive Google Cloud adoption across Saudi Arabia. I'll guide you through secure cloud foundations and scalable CI/CD pipelines.",
     imageUrl: '/sufiyan.png',
+  },
+  {
+    key: 'saif-shaikh',
+    name: 'Saif Shaikh', 
+    followers: '9+ Years Experience | Greater Kuala Lumpur',
+    experience: [
+      'Senior Platform Specialist in CDP & HDP Ecosystems',
+      'Expert in Cluster Administration & Security (Kerberos/AD)',
+      'Master of Spark3, Kafka, and Oozie Automation',
+      'Architecting Resilient Data Infrastructures on AWS',
+    ],
+    quote:
+      "I empower organizations to leverage data platforms securely and at scale. I'm here to share the analytical depth required to master Cloudera.",
+    imageUrl: '/saif.jpeg', 
+  },
+  {
+    key: 'mukhtar khan',
+    name: 'Mukhtar Khan',
+    followers: 'Linux Specialist & Systems Educator',
+    experience: [
+      'Expert in Linux Administration (RHEL/Ubuntu/CentOS)',
+      'Specialist in Shell Scripting & System Automation',
+      'Authority on Computer Fundamentals & Hardware Architecture',
+      'Mentoring students in OS Security & Kernel Optimization',
+    ],
+    quote:
+      "Mastering the command line is the foundation of all cloud technology. I focus on building your core computing strength from the ground up.",
+    imageUrl: '/placeholder-mentor.png',
   },
 ]
 
@@ -62,14 +93,13 @@ export default function Mentor() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {mentorData.map((mentor) => (
             <Card
               key={mentor.key}
-              className="bg-white/10 text-white border-white/20 backdrop-blur-sm p-6 space-y-4 transition-all duration-300 transform hover:scale-[1.03] shadow-xl border-2 border-transparent hover:border-cyan-400 flex flex-col"
+              className="bg-white/10 text-white border-white/20 backdrop-blur-sm p-6 space-y-4 transition-all duration-300 transform hover:scale-[1.03] shadow-xl border-2 border-transparent hover:border-cyan-400 flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.5rem)]"
             >
               <div className="flex flex-col items-center text-center">
-                {/* Image Link for Zuber */}
                 {mentor.key === 'zuber' ? (
                   <Link href="/zuber" className="cursor-pointer group">
                     <div className="w-36 h-36 md:w-40 md:h-40 rounded-full bg-cyan-400 mb-6 overflow-hidden shadow-xl ring-0 group-hover:ring-4 ring-cyan-400/50 transition-all">
@@ -90,7 +120,6 @@ export default function Mentor() {
                   </div>
                 )}
 
-                {/* Name Link for Zuber */}
                 {mentor.key === 'zuber' ? (
                   <Link href="/zuber">
                     <h3 className="text-2xl font-bold mb-1 hover:text-cyan-400 transition-colors">
