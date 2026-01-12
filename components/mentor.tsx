@@ -64,7 +64,7 @@ const mentorData = [
     imageUrl: '/saif.jpeg', 
   },
   {
-    key: 'mukhtar khan',
+    key: 'mukhtar-khan',
     name: 'Mukhtar Khan',
     followers: 'Linux Specialist & Systems Educator',
     experience: [
@@ -76,6 +76,20 @@ const mentorData = [
     quote:
       "Mastering the command line is the foundation of all cloud technology. I focus on building your core computing strength from the ground up.",
     imageUrl: '/placeholder-mentor.png',
+  },
+  {
+    key: 'musaib-sabadiya',
+    name: 'Musaib Sabadiya',
+    followers: 'Linux | Python | Apache NiFi Specialist',
+    experience: [
+      'Advanced Linux system administration for cloud and data platforms',
+      'Python-based automation for operational workflows and data movement',
+      'Apache NiFi specialist for designing and managing data flow pipelines',
+      'Implementing secure, reliable and scalable data ingestion architectures',
+    ],
+    quote:
+      "I believe the best way to learn cloud and data engineering is by building real systems. My goal is to make complex technologies simple, practical, and job-ready.",
+    imageUrl: '/musaib.jpeg',
   },
 ]
 
@@ -152,7 +166,6 @@ export default function Mentor() {
                 "{mentor.quote}"
               </p>
 
-              {/* View Profile Button specifically for Zuber */}
               {mentor.key === 'zuber' && (
                 <Link
                   href="/zuber"

@@ -18,15 +18,26 @@ export default function Home() {
       <Navigation />
       <Hero />
       <BannerSection />
-      <Statistics />
-      <Programs />
-      <Technologies />
-      <Mentor />
-      <Testimonials />
+      
+      {/* Scroll Targets */}
+      <section id="statistics"><Statistics /></section>
+      
+      <section id="programs"><Programs /></section>
+      
+      <section id="curriculum"><Technologies /></section>
+      
+      <section id="mentors"><Mentor /></section>
+      
+      <section id="testimonials"><Testimonials /></section>
+      
       <Workflow />
       <Companies />
-      <FAQ />
-      <CTA />
+
+      <section id="contact">
+        <FAQ />
+        <CTA />
+      </section>
+
       <Footer />
     </main>
   )

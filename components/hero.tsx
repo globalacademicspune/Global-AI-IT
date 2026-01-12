@@ -44,7 +44,7 @@ export default function Hero() {
             border border-blue-200 animate-pulse shadow-sm transition-transform hover:scale-105 cursor-default">
               <span className="flex items-center gap-2">
                 <Video size={16} className="text-blue-600" />
-                Online Demo: 9th Jan 2026 @ 7PM
+                Online Demo: 26th Jan 2026 @ 3PM
               </span>
             </div>
 
@@ -54,7 +54,7 @@ export default function Hero() {
             border border-emerald-200 animate-pulse shadow-sm transition-transform hover:scale-105 cursor-default">
               <span className="flex items-center gap-2">
                 <MapPin size={16} className="text-emerald-600" />
-                Offline Demo: 10th & 11th Jan 2026
+                Offline Demo: 24th & 25th Jan 2026
               </span>
             </div>
 
