@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { TrendingUp, Globe, Award } from 'lucide-react'
+import { Users, Globe, Award } from 'lucide-react'
 
 export default function Statistics() {
   const [isVisible, setIsVisible] = useState(false)
@@ -18,10 +18,10 @@ export default function Statistics() {
       color: 'from-blue-500 to-cyan-500'
     },
     { 
-      number: '100+ LPA', 
-      label: 'Highest CTC Recorded',
-      icon: TrendingUp,
-      color: 'from-primary to-accent'
+      number: '30+', 
+      label: 'Expert Industry Trainers',
+      icon: Users, 
+      color: 'from-indigo-500 to-purple-500' 
     },
     {
       number: '95%',
@@ -39,7 +39,7 @@ export default function Statistics() {
             const IconComponent = stat.icon
             return (
               <div 
-                key={stat.number} 
+                key={stat.number + idx} 
                 className="group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-300" style={{backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`}}></div>
