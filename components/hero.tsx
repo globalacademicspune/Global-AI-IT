@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { MessageCircle, Phone, Sparkles, Video, MapPin } from 'lucide-react'
-import CyberBackground from '@/components/cyber-background'
+import RepublicBackground from '@/components/republic-background'
 
 export default function Hero() {
   return (
@@ -10,14 +10,14 @@ export default function Hero() {
       className="relative pt-32 pb-28 overflow-hidden bg-transparent"
       style={{ background: 'transparent' }}
     >
-      {/* Cyberpunk canvas + parallax image */}
-      <CyberBackground />
+      {/* Patriotic moving particles background */}
+      <RepublicBackground />
 
-      {/* Spotlight Behind Text */}
+      {/* Spotlight Behind Text - Adjusted to Saffron glow for Republic Day */}
       <div className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center">
         <div
           className="w-[650px] h-[650px] rounded-full blur-3xl 
-          bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.35),transparent_60%)]"
+          bg-[radial-gradient(circle_at_center,rgba(255,153,51,0.2),transparent_60%)]"
         />
       </div>
 
@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Announcement Badges Container */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
             
-            {/* Box 1: New Batch - Added hover:scale-105 */}
+            {/* Box 1: New Batch */}
             <div className="inline-block bg-gradient-to-r from-amber-100 to-orange-100 
             text-amber-800 px-4 py-2 rounded-full text-xs md:text-sm font-semibold 
             border border-amber-200 animate-pulse shadow-sm transition-transform hover:scale-105 cursor-default">
@@ -60,15 +60,14 @@ export default function Hero() {
 
           </div>
 
-          {/* Rest of the component remains the same */}
           <div className="space-y-6">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white leading-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.4)]">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white leading-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
               Become an Expert on
             </h1>
-            <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-300 bg-clip-text text-transparent mb-6 leading-tight drop-shadow-[0_0_25px_rgba(0,255,255,0.5)]">
+            <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-orange-400 via-white to-green-400 bg-clip-text text-transparent mb-6 leading-tight drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]">
               Cloud Big Data Technologies
             </h2>
-            <p className="text-lg md:text-xl text-cyan-100/80 max-w-3xl mx-auto leading-relaxed font-light drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-light drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">
               Master industry-leading platforms designed by top data engineers.
               Build a rock-solid foundation with hands-on projects and real-world
               applications.
@@ -76,28 +75,29 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold hover:scale-110 hover:shadow-2xl transition-all duration-300" asChild>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeohsU5hEqL6GVc9QY_fURoOibDZqZZw9FVB_ZQMWKaxLxTNA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-gradient-to-r from-orange-600 to-orange-400 text-white font-semibold hover:scale-110 hover:shadow-2xl transition-all duration-300" asChild>
+              {/* UPDATED: Now redirects to your local Career Roadmap page */}
+              <a href="/career-roadmap">
                 Schedule a Call
               </a>
             </Button>
-            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold hover:scale-110 hover:shadow-2xl transition-all duration-300" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold hover:scale-110 hover:shadow-2xl transition-all duration-300" asChild>
               <a href="#programs-section">View Programs</a>
             </Button>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-12">
             <div className="bg-white/10 backdrop-blur-xl rounded-xl p-4 border border-white/20">
-              <div className="text-3xl font-bold text-cyan-300">5000+</div>
-              <div className="text-sm text-cyan-100/60">Students Trained</div>
+              <div className="text-3xl font-bold text-orange-400">5000+</div>
+              <div className="text-sm text-white/60">Students Trained</div>
             </div>
             <div className="bg-white/10 backdrop-blur-xl rounded-xl p-4 border border-white/20">
-              <div className="text-3xl font-bold text-blue-300">98%</div>
-              <div className="text-sm text-cyan-100/60">Success Rate</div>
+              <div className="text-3xl font-bold text-white">98%</div>
+              <div className="text-sm text-white/60">Success Rate</div>
             </div>
             <div className="bg-white/10 backdrop-blur-xl rounded-xl p-4 border border-white/20">
-              <div className="text-3xl font-bold text-cyan-300">20+</div>
-              <div className="text-sm text-cyan-100/60">Expert Mentors</div>
+              <div className="text-3xl font-bold text-green-400">20+</div>
+              <div className="text-sm text-white/60">Expert Mentors</div>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export default function Hero() {
             <a href="https://wa.me/919763616999" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-all duration-300" title="Chat on WhatsApp">
               <MessageCircle size={24} />
             </a>
-            <a href="tel:+919763616999" className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white rounded-full p-4 hover:scale-110 transition-all duration-300 flex items-center gap-2" title="Call Now">
+            <a href="tel:+919763616999" className="bg-gradient-to-r from-orange-600 to-green-600 text-white rounded-full p-4 hover:scale-110 transition-all duration-300 flex items-center gap-2" title="Call Now">
               <Phone size={24} />
               <span className="text-xs font-semibold hidden sm:inline">Call</span>
             </a>
