@@ -120,7 +120,8 @@ export default function Mentor() {
                       <img
                         src={mentor.imageUrl}
                         alt={`Picture of ${mentor.name}`}
-                        className="w-full h-full object-cover object-top"
+                        /* Changed object-top to object-[center_20%] to show hair */
+                        className="w-full h-full object-cover object-[center_20%]"
                       />
                     </div>
                   </Link>
@@ -129,7 +130,8 @@ export default function Mentor() {
                     <img
                       src={mentor.imageUrl}
                       alt={`Picture of ${mentor.name}`}
-                      className="w-full h-full object-cover object-top"
+                      /* Added the same positioning fix for consistency */
+                      className="w-full h-full object-cover object-[center_20%]"
                     />
                   </div>
                 )}

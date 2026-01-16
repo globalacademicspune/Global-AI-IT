@@ -10,11 +10,11 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Who should enroll in Global AIIT programs?',
-      answer: 'Our programs are designed for IT professionals looking to transition into Big Data and Data Engineering roles. Graduates and professionals from other domains are also welcome, provided they have basic programming knowledge.',
+      answer: 'Our programs are designed for IT professionals looking to transition into Big Data and Data Engineering roles, as well as graduates and professionals from other domains who want to build a career in the tech industry.',
     },
     {
       question: 'What are the program prerequisites?',
-      answer: 'Basic knowledge of any programming language (Java, Python, or similar) and a fundamental understanding of SQL are required. We provide pre-course materials to refresh your basics if needed.',
+      answer: 'A Bachelors degree in any stream is the only requirement to join this program. We start all technical concepts from the absolute ground up.',
     },
     {
       question: 'Will I be industry-ready after completing the course?',
