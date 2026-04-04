@@ -31,7 +31,7 @@ export default function Hero() {
               text-white px-8 py-3 rounded-full text-base md:text-lg font-black 
               border border-cyan-400 shadow-[0_0_25px_rgba(0,255,255,0.4)] flex items-center gap-3">
                 <MapPin size={22} className="animate-bounce" />
-                Offline Demo: 14th & 15th Feb 2026
+                Offline Demo: 11th & 12th April 2026
               </div>
             </Link>
           </div>
