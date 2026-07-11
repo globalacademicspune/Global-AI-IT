@@ -12,7 +12,7 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   
-  /* THIS FIXES THE ERROR: Mapping border class to the variable */
+  /* Mapping border class to the variable */
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -20,6 +20,13 @@
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
+
+  /* AI/ML Track Premium Theme Configuration */
+  --color-ai-bg: #060913;               /* Premium Charcoal Obsidian */
+  --color-ai-cyan: #00d2ff;             /* Electric neon cyan accent */
+  --color-ai-purple: #6366f1;           /* Tech purple/indigo accent */
+  --color-glass: rgba(255, 255, 255, 0.02);
+  --color-glass-border: rgba(255, 255, 255, 0.06);
 }
 
 :root {
@@ -51,7 +58,6 @@
 
 @layer base {
   * {
-    /* Now Tailwind knows what 'border-border' is */
     @apply border-border;
   }
   body {
@@ -80,4 +86,63 @@ html {
 
 .animate-technologies-marquee:hover {
   animation-play-state: paused;
+}
+
+/* =================================================
+   NEW OVERHAUL: FUTURISTIC AI MASSIVE CANVAS ENGINE
+   ================================================= */
+
+/* Deep Digital Matrix Grid */
+.bg-cyber-grid {
+  background-size: 45px 45px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 210, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.015) 1px, transparent 1px);
+}
+
+/* Continuous Matrix Stream Movement */
+@keyframes matrixStream {
+  0% {
+    transform: translateY(-20%) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(110%) rotate(5deg);
+    opacity: 0;
+  }
+}
+
+/* Multi-directional floating nodes */
+@keyframes pulseNetworkNode {
+  0%, 100% {
+    transform: scale(0.8) translate(0px, 0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.3) translate(25px, -35px);
+    opacity: 0.8;
+  }
+}
+
+/* Subtle Fluid Aurora Orbiting */
+@keyframes fluidPlasma {
+  0% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+  33% { transform: translate(40px, -60px) scale(1.1) rotate(120deg); }
+  66% { transform: translate(-50px, 20px) scale(0.9) rotate(240deg); }
+  100% { transform: translate(0px, 0px) scale(1) rotate(360deg); }
+}
+
+.animate-matrix-stream {
+  animation: matrixStream 14s linear infinite;
+}
+
+.animate-network-node {
+  animation: pulseNetworkNode 8s ease-in-out infinite;
+}
+
+.animate-plasma-fluid {
+  animation: fluidPlasma 22s ease-in-out infinite;
 }

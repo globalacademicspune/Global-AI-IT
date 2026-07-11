@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { MessageCircle, Phone, MapPin } from 'lucide-react'
+import { MessageCircle, Phone, Sparkles, MapPin } from 'lucide-react'
 import CyberBackground from '@/components/cyber-background'
 import Link from 'next/link'
 
@@ -11,9 +11,10 @@ export default function Hero() {
       className="relative pt-32 pb-28 overflow-hidden bg-transparent"
       style={{ background: 'transparent' }}
     >
+      {/* Restored the Cyber Background component */}
       <CyberBackground />
 
-      {/* Cyber Spotlight */}
+      {/* Cyber Spotlight - Cyan/Blue Glow */}
       <div className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center">
         <div
           className="w-[650px] h-[650px] rounded-full blur-3xl 
@@ -21,17 +22,18 @@ export default function Hero() {
         />
       </div>
 
+      {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-10">
           
-          {/* Highlighted Box */}
+          {/* SINGLE HIGHLIGHTED BOX */}
           <div className="flex justify-center mb-10">
             <Link href="/career-roadmap" className="inline-block transition-transform hover:scale-110 active:scale-95 animate-pulse">
               <div className="bg-gradient-to-r from-blue-600 to-cyan-500 
               text-white px-8 py-3 rounded-full text-base md:text-lg font-black 
               border border-cyan-400 shadow-[0_0_25px_rgba(0,255,255,0.4)] flex items-center gap-3">
                 <MapPin size={22} className="animate-bounce" />
-                Offline Demo: 25th & 26th April 2026
+                Offline Demo: 14th & 15th Feb 2026
               </div>
             </Link>
           </div>
@@ -50,21 +52,18 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* BOTH BUTTONS NOW IN CYBER BLUE GRADIENT */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold hover:scale-110 hover:shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all duration-300" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold hover:scale-110 hover:shadow-2xl transition-all duration-300" asChild>
               <a href="/career-roadmap">
                 Schedule a Call
               </a>
             </Button>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold hover:scale-110 hover:shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all duration-300" asChild>
-              <a href="#programs-section">
-                View Programs
-              </a>
+            <Button size="lg" className="bg-white/10 text-white border border-white/20 font-semibold hover:bg-white/20 transition-all duration-300" asChild>
+              <a href="#programs-section">View Programs</a>
             </Button>
           </div>
 
-          {/* Stats */}
+          {/* Core Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-12">
             <div className="bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10">
               <div className="text-3xl font-bold text-cyan-400">5000+</div>
@@ -80,8 +79,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Floating Actions */}
-          <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+          {/* Floating Social Actions */}
+          <div className="fixed bottom-6 right-6 flex flex-col gap-3">
             <a href="https://wa.me/919763616999" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-all duration-300" title="Chat on WhatsApp">
               <MessageCircle size={24} />
             </a>

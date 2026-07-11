@@ -176,9 +176,9 @@ export default function CyberBackground() {
   return (
     <div className="absolute inset-0 -z-50 overflow-hidden">
       {/* Parallax base image */}
-      <div className="absolute inset-0 bg-[url('/bg-tech.jpg')] bg-cover bg-center bg-fixed opacity-80" />
+/*      <div className="absolute inset-0 bg-[url('/bg-tech.jpg')] bg-cover bg-center bg-fixed opacity-80" />
       {/* Canvas cyberpunk overlay */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+/*      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
     </div>
   )
 }
