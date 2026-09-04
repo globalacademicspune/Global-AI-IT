@@ -8,14 +8,14 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 // ⭐ COMPLETELY UPDATED META FOR GEN-AI, ML & DATA SCIENCE PREVIEWS
 export const metadata: Metadata = {
-  title: 'Global AIIT - Data Science, AI, ML & Data Science Engineering Courses',
-  description: 'Master Data Science, AI, Large Language Models (LLMs), MLOps, Data Science, and Cloud Architecture with enterprise industry architects.',
+  title: 'Global AIIT - AI, ML & Data Science Engineering Courses',
+  description: 'Master AI, Large Language Models (LLMs), MLOps, Data Science, and Cloud Architecture with enterprise industry architects.',
   generator: 'v0.app',
 
   // Open Graph for WhatsApp, LinkedIn & Twitter Link Previews
   openGraph: {
-    title: 'Global AIIT - Data Science, AI, ML & Data Science Engineering Courses',
-    description: 'Master Data Science, AI, Large Language Models (LLMs), MLOps, Data Science, and Cloud Architecture with enterprise industry architects.',
+    title: 'Global AIIT - AI, ML & Data Science Engineering Courses',
+    description: 'Master AI, Large Language Models (LLMs), MLOps, Data Science, and Cloud Architecture with enterprise industry architects.',
     url: 'https://global-academics.com',
     siteName: 'Global AIIT',
     images: [
