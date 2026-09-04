@@ -39,7 +39,7 @@ export default function Home() {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
               Become an Expert in <br />
               <span className="bg-gradient-to-r from-ai-cyan to-ai-purple bg-clip-text text-transparent">
-                Generative AI & ML
+                Data Science, AI & ML
               </span>
             </h1>
 
