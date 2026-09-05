@@ -8,9 +8,9 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const faqs = [
-    { question: 'Who should enroll in Global AIIT programs?', answer: 'Our programs are designed for IT professionals looking to transition into Big Data and Data Engineering roles, as well as graduates and professionals from other domains who want to build a career in the tech industry.' },
+    { question: 'Who should enroll in Global AIIT programs?', answer: 'Our programs are designed for IT professionals looking to transition into AI, Machine Learning, and Data Science roles, as well as graduates and professionals from other domains who want to build a career in the tech industry.' },
     { question: 'What are the program prerequisites?', answer: 'A Bachelors degree in any stream is the only requirement to join this program. We start all technical concepts from the absolute ground up.' },
-    { question: 'Will I be industry-ready after completing the course?', answer: 'Yes! Our comprehensive curriculum covers the latest trending technologies in the Big Data industry. With full dedication over 7-8 months, you will be as skilled as a 3+ year experienced professional.' },
+    { question: 'Will I be industry-ready after completing the course?', answer: 'Yes! Our comprehensive curriculum covers the latest trending technologies in AI, Machine Learning, and Data Science. With full dedication over 7-8 months, you will be as skilled as a 3+ year experienced professional.' },
     { question: 'When can I start preparing for interviews?', answer: 'The course is structured into 3 major milestones. After each milestone (starting at 14 weeks), you will be interview-ready with real-world projects in your portfolio.' },
     { question: 'Is job placement guaranteed?', answer: 'While we cannot guarantee placement, our 95% job placement rate speaks volumes. We provide comprehensive placement support, resume building, interview prep, and active job matching.' },
     { question: 'Can I access course materials after completion?', answer: 'You get lifetime access to all course materials, videos, and resources. You can revisit and refresh your knowledge anytime.' },

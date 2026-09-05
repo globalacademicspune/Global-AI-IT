@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
 
             <p className="text-sm opacity-80 max-w-xs">
-              Empowering data professionals with industry-leading education and mentorship.
+              Empowering the next generation of AI, Machine Learning & Data Science professionals through industry-leading education and mentorship.
             </p>
           </div>
 

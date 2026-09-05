@@ -11,8 +11,8 @@ const mentorData = [
     followers: 'Founder & CEO | AI & Cloud Evangelist',
     experience: [
       'CEO of Global AIIT | 11+ Years IT Leadership',
-      'Azure Solutions Architect Expert, GCP Professional & AWS Certified',
-      'Trained 50,000+ professionals in AI & Big Data',
+      'Azure, GCP and AWS Certified Solutions Architect',
+      'Trained 10,000+ professionals in AI, ML & Data Science',
       'Certified Ethical Hacker (CEH) & Cybersecurity Specialist',
       'Pioneer in AI-powered Smart Classroom ecosystems',
     ],
@@ -70,7 +70,7 @@ const mentorData = [
       'Mentoring students in OS Security & Kernel Optimization',
     ],
     quote: "Mastering the command line is the foundation of all cloud technology. I focus on building your core computing strength from the ground up.",
-    imageUrl: '/placeholder-mentor.png',
+    imageUrl: '/mukhtar.png',
   },
   {
     key: 'musaib-sabadiya',

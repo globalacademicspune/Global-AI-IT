@@ -24,7 +24,7 @@ export default function CTA() {
             Ready to Transform Your Career?
           </h2>
           <p className="text-lg md:text-xl opacity-95 font-light">
-            Join 30,000+ professionals who have upskilled with Global AIIT and
+            Join 10,000+ professionals who have upskilled with Global AIIT and
             landed their dream jobs
           </p>
         </div>

@@ -12,8 +12,8 @@ export default function Statistics() {
 
   const stats = [
     { 
-      number: '30,000+', 
-      label: 'Learners from 50+ Countries',
+      number: '10,000+', 
+      label: 'Learners from 12+ Countries',
       icon: Globe,
       color: 'from-cyan-400 to-blue-500'
     },

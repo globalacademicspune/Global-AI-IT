@@ -2,10 +2,10 @@ import React from 'react';
 import Navigation from '@/components/navigation';
 import Statistics from '@/components/statistics';
 import Companies from '@/components/companies';
-import Programs from '@/components/programs';      // Tera updated traditional programs grid
-import Mentor from '@/components/mentor';          // Tere saare 6 mentors waali file
-import Testimonials from '@/components/testimonials'; // Tere premium success stories
-import FAQ from '@/components/faq';                // Tera glassmorphic faq
+import Programs from '@/components/programs';      
+import Mentor from '@/components/mentor';          
+import Testimonials from '@/components/testimonials'; 
+import FAQ from '@/components/faq';                
 import Footer from '@/components/footer';
 import NeuralNetworkBackground from '@/components/NeuralNetworkBackground';
 import { ChevronRight } from 'lucide-react';
@@ -44,7 +44,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              Master Large Language Models, LangChain ecosystem, fine-tuning mechanisms, and operational MLOps infrastructure. Build advanced intelligent solutions matching direct industry engineering standards.
+                Master Data Science, Artificial Intelligence, Machine Learning, and modern MLOps. Build real-world data-driven solutions and intelligent systems with industry-ready skills and engineering standards.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center items-center">
@@ -69,7 +69,6 @@ export default function Home() {
         <Statistics />
 
         {/* 3. PROFESSIONAL PROGRAM TRAIN CARDS GRID */}
-        {/* Iske andar ab tere DevOps, Kubernetes, AI/ML, Cloud Solutions Architect aur Big Data ke saare purane paths active hain */}
         <Programs />
 
         {/* 4. PLACEMENT CORPORATE MARQUEE SLIDER */}
@@ -83,7 +82,6 @@ export default function Home() {
         </section>
 
         {/* 5. ALL 6 EXPERT MENTORS GRID SECTION */}
-        {/* Is component call se tere Zuber, Anis, Sufiyan, Saif, Mukhtar aur Musaib waale saare cards populate ho jayenge */}
         <Mentor />
 
         {/* 6. SYSTEM ALUMNI SUCCESS STORIES */}
