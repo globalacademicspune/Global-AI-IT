@@ -74,7 +74,7 @@ const mentorData = [
   },
   {
     key: 'musaib-sabadiya',
-    name: 'Musaib',
+    name: 'Musaib', 
     followers: 'Linux | Python | Apache NiFi Specialist',
     experience: [
       'Advanced Linux system administration for cloud and data platforms',

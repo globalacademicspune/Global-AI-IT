@@ -2,10 +2,10 @@ import React from 'react';
 import Navigation from '@/components/navigation';
 import Statistics from '@/components/statistics';
 import Companies from '@/components/companies';
-import Programs from '@/components/programs';      
-import Mentor from '@/components/mentor';          
-import Testimonials from '@/components/testimonials'; 
-import FAQ from '@/components/faq';                
+import Programs from '@/components/programs';
+import Mentor from '@/components/mentor';
+import Testimonials from '@/components/testimonials';
+import FAQ from '@/components/faq';
 import Footer from '@/components/footer';
 import NeuralNetworkBackground from '@/components/NeuralNetworkBackground';
 import { ChevronRight } from 'lucide-react';
@@ -31,9 +31,12 @@ export default function Home() {
         {/* 1. HERO MAIN AREA - FULLY CENTERED */}
         <section className="pt-48 pb-32 px-4 max-w-5xl mx-auto text-center relative z-10 flex flex-col items-center justify-center min-h-[75vh]">
           <div className="space-y-6 max-w-3xl">
+            
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-ai-cyan animate-pulse" />
-              <span className="text-xs font-semibold tracking-wide text-gray-300 uppercase">Next Cohort Starting Soon</span>
+              <span className="text-xs font-semibold tracking-wide text-gray-300 uppercase">
+                Next Cohort Starting Soon
+              </span>
             </div>
             
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
@@ -44,15 +47,18 @@ export default function Home() {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                Master Data Science, Artificial Intelligence, Machine Learning, and modern MLOps. Build real-world data-driven solutions and intelligent systems with industry-ready skills and engineering standards.
+              Master Data Science, Artificial Intelligence, Machine Learning, and modern MLOps. Build real-world data-driven solutions and intelligent systems with industry-ready skills and engineering standards.
             </p>
 
+            {/* PRIMARY CTA BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center items-center">
+              
               <Link 
                 href="/career-roadmap"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-ai-cyan to-ai-purple text-gray-950 hover:opacity-90 transition-all shadow-[0_4px_25px_rgba(0,210,255,0.25)] text-center cursor-pointer flex items-center justify-center gap-2"
               >
-                Download Syllabus (PDF) <ChevronRight size={16} />
+                Download Syllabus
+                <ChevronRight size={16} />
               </Link>
               
               <Link 
@@ -62,6 +68,18 @@ export default function Home() {
                 Book a Free Career Session
               </Link>
             </div>
+
+            {/* TRAINING / INTERNSHIP CTA */}
+            <div className="flex justify-center pt-1">
+              <Link 
+                href="/register"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-white/5 border border-ai-cyan/30 text-ai-cyan hover:bg-ai-cyan/10 hover:border-ai-cyan/60 transition-all backdrop-blur-md text-center cursor-pointer flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(0,210,255,0.08)]"
+              >
+                Register for Training & Internship
+                <ChevronRight size={16} />
+              </Link>
+            </div>
+
           </div>
         </section>
 
