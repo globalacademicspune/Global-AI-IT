@@ -120,7 +120,7 @@ export default function ZuberProfile() {
                   </p>
 
                   <p className="text-2xl font-black text-primary">
-                    10,000+
+                    3000+
                   </p>
                 </div>
 
