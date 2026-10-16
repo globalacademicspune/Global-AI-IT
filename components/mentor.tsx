@@ -23,12 +23,13 @@ const mentorData = [
   {
     key: 'anis-sayed',
     name: 'Anis Sayed',
-    followers: 'Big Data DevOps Expert | Dubai, UAE',
+    followers: 'Data Architect & DevOps Lead| Dubai, UAE',
     experience: [
-      'Senior DevOps Engineer at Emirates NBD, Dubai',
+      'Principal Data Architect & DevOps Lead at BBI.ai, Dubai',
       'Specialist in Enterprise-Scale Cloud Infrastructure',
       'Expert in Security, Compliance & Platform Stability',
       'AWS Certified Professional & Big Data Administrator',
+      'CKA: Certified Kubernetes Administrator',
     ],
     quote: "I focus on production-grade stability. My goal is to teach you how to manage and optimize mission-critical data platforms at a global scale.",
     imageUrl: '/anis.jpeg',
