@@ -63,19 +63,19 @@ const mentorData = [
   {
     key: 'mukhtar-khan',
     name: 'Mukhtar Khan',
-    followers: 'Linux Specialist & Systems Educator',
+    followers: 'Cloudera & Linux Administrator',
     experience: [
-      'Expert in Linux Administration (RHEL/Ubuntu/CentOS)',
-      'Specialist in Shell Scripting & System Automation',
-      'Authority on Computer Fundamentals & Hardware Architecture',
-      'Mentoring students in OS Security & Kernel Optimization',
+      'Expert in Linux Administration (RHEL/CentOS)',
+      'Specialist in Hadoop Ecosystem Installation, Configuration & Security Hardening',
+      'Expert in Cloudera CDH & CDP Cluster Administration',
+      'Skilled in Cluster Performance Tuning & Production Troubleshooting',
     ],
     quote: "Mastering the command line is the foundation of all cloud technology. I focus on building your core computing strength from the ground up.",
     imageUrl: '/mukhtar.png',
   },
   {
     key: 'musaib-sabadiya',
-    name: 'Musaib', 
+    name: 'Musaib S', 
     followers: 'Linux | Python | Apache NiFi Specialist',
     experience: [
       'Advanced Linux system administration for cloud and data platforms',
